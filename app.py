@@ -26,7 +26,7 @@ and provide answers separately.
 """
             with st.spinner("Preparing your study help..."):
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash-lite",
+                    model="gemini-3.5-flash-lite",
                     contents=prompt
                 )
             st.markdown(response.text)
